@@ -6,7 +6,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 @RestController
 public class Start {
-	@RequestMapping("/")
+	@RequestMapping("/index")
 	public ModelAndView index() {
 		return new ModelAndView("index");
 	}
