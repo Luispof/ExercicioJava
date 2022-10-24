@@ -9,5 +9,5 @@ public class Start {
 	@RequestMapping("/index")
 	public ModelAndView index() {
 		return new ModelAndView("index");
-	}
+	}                                                                                                 
 }
