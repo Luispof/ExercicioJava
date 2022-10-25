@@ -9,5 +9,13 @@ public class Start {
 	@RequestMapping("/index")
 	public ModelAndView index() {
 		return new ModelAndView("index");
-	}                                                                                                 
+	}
+	@RequestMapping("/listaLivrosPorCategoria")
+	public ModelAndView listaLivrosPorCategoria() {
+		return new ModelAndView("listaLivrosPorCategoria");
+	}
+	@RequestMapping("/consultaPorCod")
+	public ModelAndView consultaPorCod() {
+		return new ModelAndView("consultaPorCod");
+	}
 }
