@@ -8,8 +8,9 @@
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <meta charset="UTF-8">
-<title>Consulta livro por codigo</title>
+<title>Cadastro livro</title>
 </head>
 <body>
     <!-- 	Início Nav Bar -->
@@ -26,29 +27,23 @@
             </li>
             <li class="nav-item" role="presentation">
                 <a href="/listaLivrosPorCategoria">
-                    <button class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab" type="button"
+                    <button class="nav-link rounded-5  active" id="profile-tab2" data-bs-toggle="tab" type="button"
                         role="tab" aria-selected="false">Livros por categoria</button>
                 </a>
             </li>
             <li class="nav-item" role="presentation">
                 <a href="/consultaPorCod">
-                    <button class="nav-link rounded-5 active" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab"
+                    <button class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab"
                         aria-selected="false" tabindex="-1">Pesquisa por codigo de livro</button>
                 </a>
             </li>
         </ul>
     </div>
     <!-- 	Fim Nav Bar -->
-
-<div id="one">
-		<div class="bd-example">
-		<div class="card">
-  		<div class="card-header">
-    			Consulte seu livro pelo código
-  		</div>
-  		<div class="card-body">
+    
+      		<div class="card-body">
     	<p class="card-text"></p>
-    	<form method="get" action="mostrar">
+    	<form method="get">
     	            <table class="table table-bordered">
                 <thead>
                     <tr>
@@ -70,35 +65,11 @@
                 </tbody>
             </table>
     	<div class="md-form col-md-4" id="search">
-    	<input class="form-control" type="text" placeholder="Pesquisar por codigo" aria-label="Search" name="codl" >
+    	<input class="form-control" type="text" placeholder="Pesquisar por codigo" aria-label="Search" >
   		</div>
   		</form>
   		</div>
-		</div>
-		</div>		
-		</div>
-
+    
+    
 </body>
-<style>
-	#search{
-		margin:inherit;
-		margin-right:auto;
-		    direction: rtl;
-		
-	}
-
-    #one {
-        align-items: center;
-        justify-content: center;
-        align-items: center;
-        margin-left: 300px;
-        margin-right: 300px;
-        margin-top: 30px;
-    }
-    #nav {
-        flex-direction: row;
-        align-items: center;
-        margin-left: 260px;
-    }
-</style>
 </html>

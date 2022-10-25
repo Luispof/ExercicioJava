@@ -18,4 +18,8 @@ public class Start {
 	public ModelAndView consultaPorCod() {
 		return new ModelAndView("consultaPorCod");
 	}
+	@RequestMapping("/cadastroLivro")
+	public ModelAndView cadastroLivro() {
+		return new ModelAndView("cadastroLivro");
+	}
 }
