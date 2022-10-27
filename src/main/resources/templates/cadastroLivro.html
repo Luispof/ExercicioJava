@@ -13,6 +13,7 @@
 <title>Cadastro livro</title>
 </head>
 <body>
+
     <!-- 	Início Nav Bar -->
     <div class="col-8" id="nav" >
         <ul class="nav nav-pills mb-4" id="pillNav" role="tablist">
@@ -27,7 +28,7 @@
             </li>
             <li class="nav-item" role="presentation">
                 <a href="/listaLivrosPorCategoria">
-                    <button class="nav-link rounded-5  active" id="profile-tab2" data-bs-toggle="tab" type="button"
+                    <button class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab" type="button"
                         role="tab" aria-selected="false">Livros por categoria</button>
                 </a>
             </li>
@@ -40,10 +41,15 @@
         </ul>
     </div>
     <!-- 	Fim Nav Bar -->
-    
-      		<div class="card-body">
+    <div id="one">
+		<div class="bd-example">
+		<div class="card col-sm-8">
+  		<div class="card-header">
+    			ADICIONE SEU LIVRO
+  		</div>
+  		<div class="card-body">
     	<p class="card-text"></p>
-    	<form method="get">
+    	<form method="get" action="adicionar">
     	            <table class="table table-bordered">
                 <thead>
                     <tr>
@@ -56,20 +62,53 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>1</td>
-                        <td>Java Como Programar</td>
-                        <td>H. D. Deitel</td>
-                        <td>Informática</td>
-                        <td>125</td>
+                        <td>AutoIncrementar</td>
+                        <td><input placeholder="Digite o título do livro" style="border: transparent;"/></td>
+                        <td><input placeholder="Digite o autor do livro" style="border: transparent;"/></td>
+                        <td><select class="dropdown-toggle" data-toggle="dropdown" style="border: transparent;">
+                        <option>Escolha a categoria</option>
+                        <option>Arquitetura</option>
+                        <option>Desgin</option>
+                        <option>Informática</option>
+                        <option>Literatura brasileira</option>
+                        <option>Literatura infantil</option>
+                        <option>Literatura universal</option>
+                        <option>Música e arte</option>
+                        </select></td>
+                        <td><input style="border: transparent;" placeholder="Digite o Valor do livro"/></td>
                     </tr>
                 </tbody>
             </table>
-    	<div class="md-form col-md-4" id="search">
-    	<input class="form-control" type="text" placeholder="Pesquisar por codigo" aria-label="Search" >
+    	<div class="md-form col-md-2" id="button" >
+    	<button class="btn btn-success" type="button">Adicionar</button>
   		</div>
   		</form>
   		</div>
-    
-    
+		</div>
+		</div>		
+		</div>
+        
 </body>
+<style>
+	#button{
+		margin:inherit;
+		margin-right:auto;
+		
+	}
+
+    #one {
+        margin-top: 30px;
+        text-align-last: center;
+        text-align: -webkit-center;
+        
+    }
+	#nav {
+        flex-direction: row;
+        align-items: center;
+        margin-left: 260px;
+    }
+    .input{
+    border-color: transparent;
+    }
+</style>
 </html>
