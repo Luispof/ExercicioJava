@@ -31,3 +31,10 @@ build/
 
 ### VS Code ###
 .vscode/
+/.gitignore
+/.mvn/
+/mvnw
+/mvnw.cmd
+/mysql-connector-j-8.0.31.jar
+/pom.xml
+/src/
