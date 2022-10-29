@@ -19,6 +19,18 @@ public class mostrar {
 			List<Tblivros> tblivros = new ArrayList<Tblivros>();
 			PreparedStatement stmt = this.connection.prepareStatement("select * from tblivros where codlivro = ${param.codl} ");
 			ResultSet rs = stmt.executeQuery();
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
 			while (rs.next()) {
 				Tblivros tblivro = new Tblivros();
 				tblivro.setCodlivro(rs.getInt("Codlivro"));
