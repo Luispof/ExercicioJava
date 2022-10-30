@@ -16,7 +16,7 @@
 
 <body>
     <!-- 	Início Nav Bar -->
-    <div class="col-8" id="nav" >
+    <div class="col-8" id="nav">
         <ul class="nav nav-pills mb-4" id="pillNav" role="tablist">
         </ul>
         <ul class="nav nav-pills nav-fill gap-2 p-1 small bg-white border rounded-5 shadow-sm" id="pillNav2"
@@ -43,68 +43,91 @@
     </div>
     <!-- 	Fim Nav Bar -->
 
-    <div id="one" class="col-sm-8">
-    <!-- 	Início dropdown de informçoes -->
-        <div class="dropdown" id="drop">
-            <form class="row" action="" method="get">
-                <div >
-                    <button class="btn btn btn-info col dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Selecione a categoria do livro
-                    </button>
-                    <ul class="dropdown-menu dropdown">
-                        <li><a class="dropdown-item" >Arquitetura</a></li>
-                        <li><a class="dropdown-item" >Desgin</a></li>
-                        <li><a class="dropdown-item" >Informática</a></li>
+    <div class="container">
+        <div class="row justify-content md-center">
+            <div class="col col-lg-12">
+                <div id="one">
+                    <div class="bd-example">
+                        <div class="card col-sm-8">
+                            <div class="card-header">
+                                <!-- Início dropdown de informações -->
 
-                        <li><a class="dropdown-item " >Literatura brasileira</a></li>
-                        <li><a class="dropdown-item" >Literatura infantil</a></li>
-                        <li><a class="dropdown-item" >Literatura universal</a></li>
-                        <li><a class="dropdown-item" >Música e arte</a></li>
-                    </ul>
+                                <div class="dropdown" id="drop">
+                                    <form class="row" action="" method="get">
+                                        <div>
+
+                                            <td><select class="btn btn btn-info col dropdown-toggle" type="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <option>Escolha a categoria</option>
+                                                    <option>Arquitetura</option>
+                                                    <option>Desgin</option>
+                                                    <option>Informática</option>
+                                                    <option>Literatura brasileira</option>
+                                                    <option>Literatura infantil</option>
+                                                    <option>Literatura universal</option>
+                                                    <option>Música e arte</option>
+                                                </select></td>
+
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- Fim dopdown de informações -->
+
+                            <!-- Início Lista de ifnromações -->
+                            <div class="card-body">
+                                <div class="card-text">
+
+                                    <div class="container">
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th id="aff">Codigo</th>
+                                                    <th>Titulo</th>
+                                                    <th>Autor</th>
+                                                    <th>Categoria</th>
+                                                    <th>Valor</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Java Como Programar</td>
+                                                    <td>H. D. Deitel</td>
+                                                    <td>Informática</td>
+                                                    <td>125</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>Bancos de Dados</td>
+                                                    <td>L. Date</td>
+                                                    <td>Informática</td>
+                                                    <td>95</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7</td>
+                                                    <td>Algoritmos e estruturas de dados</td>
+                                                    <td>Angelo Moura Guimaraes</td>
+                                                    <td>Informática</td>
+                                                    <td>65</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div><br />
+                                    <!-- Fim Lista de informações -->
+
+                                    <!-- Início copyright -->
+                                    <footer id="footer">
+                                        <p>©Copyright 2022 by Tiringa Group. All rights reversed.</p>
+                                    </footer>
+                                    <!-- Fim copyright -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </form>
+            </div>
         </div>
-     <!-- 	Fim dropdown de informçoes -->
-        <div class="container">
-            <table class="table table-bordered">
-                <thead>
-                    <tr>
-                        <th id="aff">Codigo</th>
-                        <th>Titulo</th>
-                        <th>Autor</th>
-                        <th>Categoria</th>
-                        <th>Valor</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Java Como Programar</td>
-                        <td>H. D. Deitel</td>
-                        <td>Informática</td>
-                        <td>125</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Bancos de Dados</td>
-                        <td>L. Date</td>
-                        <td>Informática</td>
-                        <td>95</td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td>Algoritmos e estruturas de dados</td>
-                        <td>Angelo Moura Guimaraes</td>
-                        <td>Informática</td>
-                        <td>65</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div><br/>
-        <footer id="footer">
-            <p>©Copyright 2022 by Tiringa Group. All rights reserved.</p>
-        </footer>
     </div>
 
 </body>
@@ -112,20 +135,16 @@
 
 <style>
     #one {
-        border-style: solid;
+        margin-top: 30px;
         text-align-last: center;
-        margin: auto;
-        margin-top: 20px;
+        text-align: -webkit-center;
+
     }
+
     #nav {
         flex-direction: row;
         align-items: center;
-        margin: auto;
-    }
-    #drop {
-        
-        padding-bottom: 20px;
-        padding-top: 10px;
+        margin-left: 260px;
     }
 </style>
 
