@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <link rel="stylesheet" type="text/css" href="../static/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -9,13 +10,14 @@
         crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<meta charset="UTF-8">
-<title>Cadastro livro</title>
+    <meta charset="UTF-8">
+    <title>Cadastro livro</title>
 </head>
+
 <body>
 
     <!-- 	Início Nav Bar -->
-    <div class="col-8" id="nav" >
+    <div class="col-8" id="nav">
         <ul class="nav nav-pills mb-4" id="pillNav" role="tablist">
         </ul>
         <ul class="nav nav-pills nav-fill gap-2 p-1 small bg-white border rounded-5 shadow-sm" id="pillNav2"
@@ -28,8 +30,8 @@
             </li>
             <li class="nav-item" role="presentation">
                 <a href="/listaLivrosPorCategoria">
-                    <button class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab" type="button"
-                        role="tab" aria-selected="false">Livros por categoria</button>
+                    <button class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab" type="button" role="tab"
+                        aria-selected="false">Livros por categoria</button>
                 </a>
             </li>
             <li class="nav-item" role="presentation">
@@ -41,198 +43,216 @@
         </ul>
     </div>
     <!-- 	Fim Nav Bar -->
-    
-  <!--   Ínicio adiciona livro  -->
+
+    <!--   Ínicio adiciona livro  -->
     <div id="one">
-		<div class="bd-example">
-		<div class="card col-sm-8">
-  		<div class="card-header">
-    			ADICIONE SEU LIVRO
-  		</div>
-  		<div class="card-body">
-    	<p class="card-text"></p>
-    	<form method="get" action="adicionar">
-    	            <table class="table table-bordered">
-                <thead>
-                    <tr>
-                        <th id="aff">Codigo</th>
-                        <th>Titulo</th>
-                        <th>Autor</th>
-                        <th>Categoria</th>
-                        <th>Valor</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>AutoIncrementar</td>
-                        <td><input placeholder="Digite o título do livro" style="border: transparent;"/></td>
-                        <td><input placeholder="Digite o autor do livro" style="border: transparent;"/></td>
-                        <td><select class="dropdown-toggle" data-toggle="dropdown" style="border: transparent;">
-                        <option>Escolha a categoria</option>
-                        <option>Arquitetura</option>
-                        <option>Desgin</option>
-                        <option>Informática</option>
-                        <option>Literatura brasileira</option>
-                        <option>Literatura infantil</option>
-                        <option>Literatura universal</option>
-                        <option>Música e arte</option>
-                        </select></td>
-                        <td><input style="border: transparent;" placeholder="Digite o Valor do livro"/></td>
-                    </tr>
-                </tbody>
-            </table>
-    	<div class="md-form col-md-2" id="button" >
-    	<button class="btn btn-success" type="button">Adicionar Livro</button>
-  		</div>
-  		</form>
-  		</div>
-		</div>
-		</div>		
-		</div>
-		<!--   Fim adiciona livro  -->
-		
-		
-		<!--   Ínicio edite livro  -->
-		    <div id="two">
-		<div class="bd-example">
-		<div class="card col-sm-8">
-  		<div class="card-header">
-    			EDITE SEU LIVRO
-  		</div>
-  		<div class="card-body">
-    	<p class="card-text"></p>
-    	<form method="get" action="adicionar">
-    	            <table class="table table-bordered">
-                <thead>
-                    <tr>
-                        <th id="aff">Codigo</th>
-                        <th>Titulo</th>
-                        <th>Autor</th>
-                        <th>Categoria</th>
-                        <th>Valor</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>AutoIncrementar</td>
-                        <td><input placeholder="Digite o título do livro" style="border: transparent;"/></td>
-                        <td><input placeholder="Digite o autor do livro" style="border: transparent;"/></td>
-                        <td><select class="dropdown-toggle" data-toggle="dropdown" style="border: transparent;">
-                        <option>Escolha a categoria</option>
-                        <option>Arquitetura</option>
-                        <option>Desgin</option>
-                        <option>Informática</option>
-                        <option>Literatura brasileira</option>
-                        <option>Literatura infantil</option>
-                        <option>Literatura universal</option>
-                        <option>Música e arte</option>
-                        </select></td>
-                        <td><input style="border: transparent;" placeholder="Digite o Valor do livro"/></td>
-                    </tr>
-                </tbody>
-            </table>
-        	<div class="container-fluid">
-        		<div class="row">
-        			<div class="col col-sm-2"><button class="btn btn-success" type="button">Editar Livro</button></div>
-        			<div class="col col-md-6"><input class="form-control" type="text" placeholder="Pesquisar por codigo" aria-label="Search" name="codl"></div>
-        		</div>
-        	</div>    
-  		</form>
-  		</div>
-		</div>
-		</div>		
-		</div>
-		
-		<!--   Fim edite livro  -->
-		
-		
-		<!--   Ínicio deleta livro  -->
-		    <div id="three">
-		<div class="bd-example">
-		<div class="card col-sm-8">
-  		<div class="card-header">
-    			EXCLUA SEU LIVRO
-  		</div>
-  		<div class="card-body">
-    	<p class="card-text"></p>
-    	<form method="get" action="adicionar">
-    	            <table class="table table-bordered">
-                <thead>
-                    <tr>
-                        <th id="aff">Codigo</th>
-                        <th>Titulo</th>
-                        <th>Autor</th>
-                        <th>Categoria</th>
-                        <th>Valor</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>AutoIncrementar</td>
-                        <td><input placeholder="Digite o título do livro" style="border: transparent;"/></td>
-                        <td><input placeholder="Digite o autor do livro" style="border: transparent;"/></td>
-                        <td><select class="dropdown-toggle" data-toggle="dropdown" style="border: transparent;">
-                        <option>Escolha a categoria</option>
-                        <option>Arquitetura</option>
-                        <option>Desgin</option>
-                        <option>Informática</option>
-                        <option>Literatura brasileira</option>
-                        <option>Literatura infantil</option>
-                        <option>Literatura universal</option>
-                        <option>Música e arte</option>
-                        </select></td>
-                        <td><input style="border: transparent;" placeholder="Digite o Valor do livro"/></td>
-                    </tr>
-                </tbody>
-            </table>
-			<div class="container-fluid">
-        		<div class="row">
-        			<div class="col col-sm-2"><button class="btn btn-danger" type="button">Excluir Livro</button></div>
-        			<div class="col col-md-6"><input class="form-control" type="text" placeholder="Pesquisar por codigo" aria-label="Search" name="codl"></div>
-        		</div>
-        	</div>
-  		</form>
-  		</div>
-		</div>
-		</div>		
-		</div>       
-		<!--   Fim deleta livro  -->
-		
-		
+        <div class="bd-example">
+            <div class="card col-sm-8">
+                <div class="card-header">
+                    ADICIONE SEU LIVRO
+                </div>
+                <div class="card-body">
+                    <p class="card-text"></p>
+                    <form method="get" action="adicionar">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th id="aff">Codigo</th>
+                                    <th>Titulo</th>
+                                    <th>Autor</th>
+                                    <th>Categoria</th>
+                                    <th>Valor</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>AutoIncrementar</td>
+                                    <td><input placeholder="Digite o título do livro" style="border: transparent;" />
+                                    </td>
+                                    <td><input placeholder="Digite o autor do livro" style="border: transparent;" />
+                                    </td>
+                                    <td><select class="dropdown-toggle" data-toggle="dropdown"
+                                            style="border: transparent;">
+                                            <option>Escolha a categoria</option>
+                                            <option>Arquitetura</option>
+                                            <option>Desgin</option>
+                                            <option>Informática</option>
+                                            <option>Literatura brasileira</option>
+                                            <option>Literatura infantil</option>
+                                            <option>Literatura universal</option>
+                                            <option>Música e arte</option>
+                                        </select></td>
+                                    <td><input style="border: transparent;" placeholder="Digite o Valor do livro" />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="md-form col-md-2" id="button">
+                            <button class="btn btn-success" type="button">Adicionar Livro</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--   Fim adiciona livro  -->
+
+
+    <!--   Ínicio edite livro  -->
+    <div id="two">
+        <div class="bd-example">
+            <div class="card col-sm-8">
+                <div class="card-header">
+                    EDITE SEU LIVRO
+                </div>
+                <div class="card-body">
+                    <p class="card-text"></p>
+                    <form method="get" action="adicionar">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th id="aff">Codigo</th>
+                                    <th>Titulo</th>
+                                    <th>Autor</th>
+                                    <th>Categoria</th>
+                                    <th>Valor</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>AutoIncrementar</td>
+                                    <td><input placeholder="Digite o título do livro" style="border: transparent;" />
+                                    </td>
+                                    <td><input placeholder="Digite o autor do livro" style="border: transparent;" />
+                                    </td>
+                                    <td><select class="dropdown-toggle" data-toggle="dropdown"
+                                            style="border: transparent;">
+                                            <option>Escolha a categoria</option>
+                                            <option>Arquitetura</option>
+                                            <option>Desgin</option>
+                                            <option>Informática</option>
+                                            <option>Literatura brasileira</option>
+                                            <option>Literatura infantil</option>
+                                            <option>Literatura universal</option>
+                                            <option>Música e arte</option>
+                                        </select></td>
+                                    <td><input style="border: transparent;" placeholder="Digite o Valor do livro" />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col col-sm-2"><button class="btn btn-success" type="button">Editar
+                                        Livro</button></div>
+                                <div class="col col-md-6"><input class="form-control" type="text"
+                                        placeholder="Pesquisar por codigo" aria-label="Search" name="codl"></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--   Fim edite livro  -->
+
+
+    <!--   Ínicio deleta livro  -->
+    <div id="three">
+        <div class="bd-example">
+            <div class="card col-sm-8">
+                <div class="card-header">
+                    EXCLUA SEU LIVRO
+                </div>
+                <div class="card-body">
+                    <p class="card-text"></p>
+                    <form method="get" action="adicionar">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th id="aff">Codigo</th>
+                                    <th>Titulo</th>
+                                    <th>Autor</th>
+                                    <th>Categoria</th>
+                                    <th>Valor</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                    <div class="container">
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th id="aff">Codigo</th>
+                                                    <th>Titulo</th>
+                                                    <th>Autor</th>
+                                                    <th>Categoria</th>
+                                                    <th>Valor</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Java Como Programar</td>
+                                                    <td>H. D. Deitel</td>
+                                                    <td>Informática</td>
+                                                    <td>125</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                            </tbody>
+                        </table>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col col-sm-2"><button class="btn btn-danger" type="button">Excluir
+                                        Livro</button></div>
+                                <div class="col col-md-6"><input class="form-control" type="text"
+                                        placeholder="Pesquisar por codigo" aria-label="Search" name="codl"></div>
+                            </div>
+                        </div>
+                    </form><br/>
+                </div>
+            </div>
+        </div>
+    </div><br/><br/>
+    <!--   Fim deleta livro  -->
+
+
 </body>
 <style>
-	#button{
-		margin:inherit;
-		margin-right:auto;
-		
-	}
+    #button {
+        margin: inherit;
+        margin-right: auto;
+
+    }
 
     #one {
         margin-top: 30px;
         text-align-last: center;
         text-align: -webkit-center;
-        
+
     }
-        #two {
+
+    #two {
         margin-top: 30px;
         text-align-last: center;
         text-align: -webkit-center;
-        
+
     }
-        #three {
+
+    #three {
         margin-top: 30px;
         text-align-last: center;
         text-align: -webkit-center;
-        
+
     }
-	#nav {
+
+    #nav {
         flex-direction: row;
         align-items: center;
         margin-left: 260px;
     }
-    
-    
-    
 </style>
 
 </html>
